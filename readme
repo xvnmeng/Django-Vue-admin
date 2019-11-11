@@ -1,0 +1,17 @@
+1、创建项目命令：django-admin startproject project_name ;
+2、创建app： python3 manage.py startapp appname ;
+3、启动服务： python manage.py runserver ；
+4、找到Python安装路劲下的Python37\Lib\site-packages\django\db\backends\mysql\base.py文件
+
+将文件中的如下代码注释
+
+if version < (1, 3, 3):
+raise ImproperlyConfigured("mysqlclient 1.3.3 or newer is required; you have %s" % Database.__version__)
+
+5、打开此文件把146行的decode修改为encode ；
+6、render 本意就是着色，粉刷的意思
+
+7、C:\Users\Adminitrator\.vue-templates，解压 https://github.com/vuejs-templates/ ，选择 webpack-simple 下载到本地
+8、vue init webpack-simple projectName --offline，生成vue项目在django下面
+9、添加vue的组件： npm install element-ui vue-resource ；
+10、
